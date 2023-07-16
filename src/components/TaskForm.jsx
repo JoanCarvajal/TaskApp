@@ -18,16 +18,16 @@ function TaskForm() {
 		}
 	return (
 <div className='max-w-md mx-auto'>
-		<form onSubmit={handleSubmit} className='bg-slate-700 mb-8 p-10'>
+		<form onSubmit={handleSubmit} className='bg-blue-800	 mb-8 p-10 rounded-md shadow-md'>
  <h1 className='text-white text-xl' >Crea tu  Tarea</h1>
 
-			<input className='bg-slate-300 p-3 mb-2 w-full' placeholder='Escribre tu tarea'
+			<input className='bg-slate-100 p-3 rounded-md   mb-2 w-full' placeholder='Escribre tu tarea'
 				onChange={(e) => setTitle(e.target.value)}
 				value={title}
 			/>
 			<br />
-	<textarea className='bg-slate-300 p-3 mb-2 w-full h-28' value={description} onChange={(e) => setDescription(e.target.value)} placeholder='Escribe la Descripcion de la tarea' id="" cols="30" rows="10"></textarea>
-			<button className='bg-indigo-600 text-white px-3 py-1 rounded-md' >Guardar</button>
+	<textarea className='bg-slate-100 rounded-md p-3 mb-2 w-full h-28' value={description} onChange={(e) => setDescription(e.target.value)} placeholder='Escribe la Descripcion de la tarea' id="" cols="30" rows="10"></textarea>
+			<button className='bg-blue-600 text-white px-3 py-1 rounded-md' >Guardar</button>
 		</form>
 </div>
 
